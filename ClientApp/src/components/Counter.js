@@ -32,10 +32,7 @@ export default function Counter() {
     },[counter, counter])
     function handleClick() {
         setCounter(counter+1)
-        buttonClicker.disabled= true;
-        setTimeout(()=>{
-            buttonClicker.disabled=false
-        }, 500)
+        
         
     }
     return (
