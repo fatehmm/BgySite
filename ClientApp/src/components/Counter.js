@@ -31,10 +31,10 @@ export default function Counter() {
         
     },[counter, counter])
     function handleClick() {
-        buttonClicker.disabled = true;
         setTimeout(() => {
-            buttonClicker.disabled = false
+            buttonClicker.disabled = true
         }, 400);
+        buttonClicker.disabled = false;
         setCounter(counter+1)
         
         
